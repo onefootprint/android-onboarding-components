@@ -428,4 +428,22 @@
       </exclusions>
     </dependency>
   </dependencies>
+
+  <!-- make sure that this is added even if the file is modified -->
+  <build>
+        <plugins>
+            <plugin>
+                <groupId>com.github.dcendents</groupId>
+                <artifactId>android-maven-plugin</artifactId>
+                <version>4.4.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>install</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
